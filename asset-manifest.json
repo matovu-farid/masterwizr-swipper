@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.bec6bec2.css",
-    "main.js": "/static/js/main.85f3f773.js",
-    "index.html": "/index.html",
-    "main.bec6bec2.css.map": "/static/css/main.bec6bec2.css.map",
-    "main.85f3f773.js.map": "/static/js/main.85f3f773.js.map"
+    "main.css": "/masterwizr-swipper/static/css/main.bec6bec2.css",
+    "main.js": "/masterwizr-swipper/static/js/main.85f3f773.js",
+    "index.html": "/masterwizr-swipper/index.html",
+    "main.bec6bec2.css.map": "/masterwizr-swipper/static/css/main.bec6bec2.css.map",
+    "main.85f3f773.js.map": "/masterwizr-swipper/static/js/main.85f3f773.js.map"
   },
   "entrypoints": [
     "static/css/main.bec6bec2.css",
