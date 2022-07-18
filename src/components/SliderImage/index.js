@@ -7,7 +7,7 @@ const SliderImage = ({ index, image }) => {
   const ref = useRef(null);
   useEffect(() => {
     if (selectedImageIndex === index) {
-      ref.current.scrollIntoView();
+      ref.current.scrollIntoView({behavior: 'smooth', block: 'center' });
     }
   },[selectedImageIndex]);
 
