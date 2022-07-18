@@ -21,9 +21,9 @@ const Swipper = () => {
   return (
     <div className={style.swipper}>
       <h1 className={style.heading}>Materwizr modules</h1>
-      
-        <IconList images={images} />
-      
+
+      <IconList images={images} />
+
       <Slider images={images} />
     </div>
   );

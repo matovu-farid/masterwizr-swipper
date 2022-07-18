@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
+import { ImCircleLeft, ImCircleRight } from 'react-icons/im';
 import { ImageContext } from '../../contexts/imageContext';
 import SliderImage from '../SliderImage';
 import SwipeDetector from '../SwipeDetector';
 import style from './style.module.scss';
-import { ImCircleLeft, ImCircleRight } from 'react-icons/im';
 
 const Slider = ({ images }) => {
   const { goToNextImage, goToPreviousImage } = useContext(ImageContext);
@@ -18,8 +18,8 @@ const Slider = ({ images }) => {
           ))}
 
         </div>
-        
-          <ImCircleRight className={style.button} onClick={goToNextImage} />
+
+        <ImCircleRight className={style.button} onClick={goToNextImage} />
       </section>
 
     </SwipeDetector>

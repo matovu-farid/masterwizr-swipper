@@ -23,12 +23,10 @@ const SwipeDetector = ({
     const isLeftSwipe = distance > minSwipeDistance;
     if (isLeftSwipe) {
       onLeftSwipe();
-      console.log('swipe left');
     }
     const isRightSwipe = distance < -minSwipeDistance;
     if (isRightSwipe) {
       onRightSwipe();
-      console.log('swipe right');
     }
   };
   return (

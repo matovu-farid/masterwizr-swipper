@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useState } from 'react';
 
 export const ImageContext = createContext({
   selectedImageIndex: null,
@@ -48,9 +48,6 @@ const ImageProvider = ({ children }) => {
     goToPreviousImage,
     goToImageAtIndex,
   });
-  useEffect(() => {
-    console.log(imageIndex.selectedImageIndex);
-  }, [imageIndex]);
 
   return (
     <ImageContext.Provider value={imageIndex}>{children}</ImageContext.Provider>

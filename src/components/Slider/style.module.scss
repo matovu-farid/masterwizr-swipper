@@ -10,7 +10,8 @@
   display: none
 }
 .button {
-  display: none
+  display: none;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 800px) {
