@@ -6,7 +6,7 @@ const IconList = ({images}) => {
   return (
     <div className={style['icon-list']}>
       {
-        images.map(image=>(<Icon thumbUrl={image.thumbUrl} title={image.title} />))
+        images.map(image=>(<Icon key={image.id} thumbnailUrl={image.thumbnailUrl} title={image.title} />))
       }
     </div>
   )

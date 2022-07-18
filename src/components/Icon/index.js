@@ -1,15 +1,15 @@
 import React from 'react'
 import style from './style.module.scss'
 
-const Icon = ({thumbUrl,title}) => {
+const Icon = ({thumbnailUrl,title}) => {
   const shortenedTitle = title.split(' ')[0]
   return (
-    <>
+    <div className={style['labelled-icon']}>
     <div className={style.icon}>
-      <img className={style['icon-img']} src={thumbUrl} alt={shortenedTitle} />
+      <img className={style['icon-img']} src={thumbnailUrl} alt={shortenedTitle} />
     </div>
     <p>{shortenedTitle}</p>
-    </>
+    </div>
   )
 }
 
