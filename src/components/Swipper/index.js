@@ -14,7 +14,15 @@ const Swipper = () => {
     fetchImages()
   },[])
   return (
+    <>
+    <h1>Materwizr modules</h1>
+    <div>
+      {
+        images.map()
+      }
+    </div>
     <div>{images.map(image=>(<img src={image.url} alt={image.title} key={image.id}/>))}</div>
+    </>
   )
 }
 
