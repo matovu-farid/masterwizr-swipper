@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { BASEURL } from '../../contants'
+import IconList from '../IconList'
 
 const Swipper = () => {
   const [images, setImages] = useState([])
@@ -17,9 +18,7 @@ const Swipper = () => {
     <>
     <h1>Materwizr modules</h1>
     <div>
-      {
-        images.map()
-      }
+      <IconList images={images}/>
     </div>
     <div>{images.map(image=>(<img src={image.url} alt={image.title} key={image.id}/>))}</div>
     </>
