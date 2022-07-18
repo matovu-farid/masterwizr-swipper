@@ -7,7 +7,7 @@ This a swipper website
 ## Description
 swipper is an app that allows you to swipe through images fetched via an api 
 
-![screenshot](./screenshot.PNG)
+![screenshot](./screenshot.png)
 
 
 
@@ -24,7 +24,7 @@ To get the content of this project locally you need to run this command in your 
 - npm start
 ### Deployment
 This project is deployed on a github page on the link below:
-- [Click here](https://friendly-allen-b461f6.netlify.app/)
+- [Click here](https://matovu-farid.github.io/masterwizr-swipper/)
 
 ## Author
 
