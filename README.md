@@ -14,7 +14,7 @@ swipper is an app that allows you to swipe through images fetched via an api
 ## Built With
 
 - React
-- CSS
+- SCSS
 
 ## Getting Started
 To get the content of this project locally you need to run this command in your terminal:
