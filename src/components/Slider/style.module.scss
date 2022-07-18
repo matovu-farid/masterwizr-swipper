@@ -9,3 +9,25 @@
 .slider::-webkit-scrollbar {
   display: none
 }
+.button {
+  display: none
+}
+
+@media only screen and (min-width: 800px) {
+  .slider-section {
+    display: flex
+
+  }
+  .button {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider {
+
+  overflow-x: hidden;
+  width: 600px
+
+  }
+}

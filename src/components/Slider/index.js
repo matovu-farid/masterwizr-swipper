@@ -10,13 +10,16 @@ const Slider = ({ images }) => {
 
   return (
     <SwipeDetector onLeftSwipe={() => goToNextImage()} onRightSwipe={() => goToPreviousImage()}>
+      <section className={style['slider-section']}>
+        
+        <div className={style.slider}>
+          {images.map((image, index) => (
+            <SliderImage key={image.id} image={image} index={index} />
+          ))}
 
-      <div className={style.slider}>
-        {images.map((image, index) => (
-          <SliderImage key={image.id} image={image} index={index} />
-        ))}
+        </div>
+      </section>
 
-      </div>
     </SwipeDetector>
   );
 };
