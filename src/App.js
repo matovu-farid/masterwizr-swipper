@@ -1,8 +1,11 @@
 import './App.scss';
+import Swipper from './components/Swipper';
 
 function App() {
   return (
-    <div>Hello</div>
+    <>
+      <Swipper/>
+    </>
   );
 }
 
