@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ImageContext } from '../../contexts/imageContext';
 import style from './style.module.scss';
 
-const Icon = ({ thumbnailUrl, title }) => {
+const Icon = ({ thumbnailUrl, title, index }) => {
+  const { goToImageAtIndex } = useContext(ImageContext);
   const shortenedTitle = title.split(' ')[0];
   return (
-    <div className={style['labelled-icon']}>
+    <button type="button" onClick={() => goToImageAtIndex(index)} className={style['labelled-icon']}>
       <div className={style.icon}>
         <img className={style['icon-img']} src={thumbnailUrl} alt={shortenedTitle} />
       </div>
       <p>{shortenedTitle}</p>
-    </div>
+    </button>
   );
 };
 
