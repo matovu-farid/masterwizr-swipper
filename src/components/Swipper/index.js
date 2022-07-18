@@ -1,14 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import BASEURL from '../../contants';
 
-import { ImageContext } from '../../contexts/imageContext';
 import IconList from '../IconList';
+import Slider from '../Slider';
 
 const Swipper = () => {
   const [images, setImages] = useState([]);
-  const { selectedImageIndex } = useContext(ImageContext);
-  const selectedImage = () => images[selectedImageIndex];
-
   useEffect(() => {
     const fetchImages = async () => {
       const response = await fetch(BASEURL);
@@ -26,7 +23,7 @@ const Swipper = () => {
       <div>
         <IconList images={images} />
       </div>
-      <img src={selectedImage().url} alt={selectedImage().title} key={selectedImage().id} />
+      <Slider images={images} />
     </>
   );
 };
