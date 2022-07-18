@@ -1,0 +1,11 @@
+.heading{
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .swipper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

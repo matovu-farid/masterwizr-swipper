@@ -3,6 +3,7 @@ import BASEURL from '../../contants';
 
 import IconList from '../IconList';
 import Slider from '../Slider';
+import style from './style.module.scss';
 
 const Swipper = () => {
   const [images, setImages] = useState([]);
@@ -18,13 +19,13 @@ const Swipper = () => {
   if (images.length <= 0) return null;
 
   return (
-    <>
-      <h1>Materwizr modules</h1>
-      <div>
+    <div className={style.swipper}>
+      <h1 className={style.heading}>Materwizr modules</h1>
+      
         <IconList images={images} />
-      </div>
+      
       <Slider images={images} />
-    </>
+    </div>
   );
 };
 

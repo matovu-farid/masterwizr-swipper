@@ -9,7 +9,7 @@ const Slider = ({ images }) => {
   const { goToNextImage, goToPreviousImage } = useContext(ImageContext);
 
   return (
-    <SwipeDetector onLeftSwipe={goToPreviousImage} onRightSwipe={goToNextImage}>
+    <SwipeDetector onLeftSwipe={() => goToNextImage()} onRightSwipe={() => goToPreviousImage()}>
 
       <div className={style.slider}>
         {images.map((image, index) => (

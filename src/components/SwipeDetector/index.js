@@ -6,22 +6,30 @@ const SwipeDetector = ({
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
-  const minSwipeDistance = 50;
+  const minSwipeDistance = 5;
 
   const onTouchStart = (e) => {
     setTouchEnd(null);
     setTouchStart(e.targetTouches[0].clientX);
   };
 
-  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+  const onTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
 
   const onTouchEnd = () => {
     if (!touchStart || !touchEnd || disabled) return;
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > minSwipeDistance;
-    if (isLeftSwipe) onLeftSwipe();
+    if (isLeftSwipe) {
+      onLeftSwipe();
+      console.log('swipe left');
+    }
     const isRightSwipe = distance < -minSwipeDistance;
-    if (isRightSwipe) onRightSwipe();
+    if (isRightSwipe) {
+      onRightSwipe();
+      console.log('swipe right');
+    }
   };
   return (
     <div

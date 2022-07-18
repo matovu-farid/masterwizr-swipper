@@ -13,16 +13,35 @@ const ImageProvider = ({ children }) => {
       ...state,
       selectedImageIndex: index,
     }));
-  const goToNextImage = () => setImageIndex((state) => (
-    {
-      ...state,
-      selectedImageIndex: state.selectedImageIndex + 1,
-    }));
-  const goToPreviousImage = () => setImageIndex((state) => (
-    {
-      ...state,
-      selectedImageIndex: state.selectedImageIndex - 1,
-    }));
+  const goToNextImage = () => setImageIndex((state) => {
+    if (state.selectedImageIndex >= 5) {
+      return ({
+        ...state,
+        selectedImageIndex: 0,
+      }
+      );
+    }
+    return (
+
+      {
+        ...state,
+        selectedImageIndex: state.selectedImageIndex + 1,
+      });
+  });
+  const goToPreviousImage = () => setImageIndex((state) => {
+    if (state.selectedImageIndex <= 0) {
+      return ({
+        ...state,
+        selectedImageIndex: 5,
+      }
+      );
+    }
+    return (
+      {
+        ...state,
+        selectedImageIndex: state.selectedImageIndex - 1,
+      });
+  });
   const [imageIndex, setImageIndex] = useState({
     selectedImageIndex: 0,
     goToNextImage,
