@@ -20,7 +20,9 @@
       "import/no-unresolved": "off",
       "react/prop-types": "off",
       "no-use-before-define": "off",
-      "no-shadow": "off"
+      "no-shadow": "off",
+      "consistent-return": "off",
+      "implicit-arrow-linebreak":"off"
     },
     "ignorePatterns": [
       "dist/",

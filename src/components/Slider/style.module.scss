@@ -3,3 +3,13 @@
   height: 400px;
   object-fit: cover;
 }
+
+.slider {
+  overflow-x: scroll;
+  display: flex;
+  
+  
+}
+// .slider::-webkit-scrollbar {
+//   display: none
+// }

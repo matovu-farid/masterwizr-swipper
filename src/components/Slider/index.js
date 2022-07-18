@@ -1,24 +1,23 @@
-import React, { useContext } from 'react';
-import { ImageContext } from '../../contexts/imageContext';
-import SwipeDetector from '../SwipeDetector';
+import React from 'react';
+// import { ImageContext } from '../../contexts/imageContext';
 import style from './style.module.scss';
 
-const Slider = ({ images }) => {
-  const { selectedImageIndex } = useContext(ImageContext);
-  const selectedImage = images[selectedImageIndex];
-  return (
+const Slider = ({ images }) =>
+// const { selectedImageIndex } = useContext(ImageContext);
+// const selectedImage = images[selectedImageIndex];
+  (
     <div className={style.slider}>
-      <SwipeDetector>
-        <img
-          className={style['slider-img']}
-          src={selectedImage.url}
-          alt={selectedImage.title}
-          key={selectedImage.id}
-        />
-      </SwipeDetector>
+      {
+        images.map((image) => (
+          <img
+            className={style['slider-img']}
+            src={image.url}
+            alt={image.title}
+            key={image.id}
+          />
+        ))
+      }
 
     </div>
   );
-};
-
 export default Slider;
