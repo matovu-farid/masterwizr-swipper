@@ -1,4 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # swipper
 
@@ -9,10 +8,7 @@ swipper is an app that allows you to swipe through images fetched via an api
 
 ![screenshot](./screenshot.png)
 
-
-
 ## Built With
-
 - React
 - CSS
 

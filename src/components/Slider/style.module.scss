@@ -1,14 +1,13 @@
 
-
 .slider {
   overflow-x: scroll;
   display: flex;
-  
-  
 }
+
 .slider::-webkit-scrollbar {
-  display: none
+  display: none;
 }
+
 .button {
   display: none;
   cursor: pointer;
@@ -16,23 +15,20 @@
 
 @media only screen and (min-width: 800px) {
   .slider-section {
-    display: flex
-
+    display: flex;
   }
+
   .button {
     align-items: center;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-size: 3rem;
-    margin: auto 1rem ;
+    margin: auto 1rem;
     color: gray;
-    
   }
+
   .slider {
-
-  overflow-x: hidden;
-  width: 600px
-
+    overflow-x: hidden;
+    width: 600px;
   }
 }

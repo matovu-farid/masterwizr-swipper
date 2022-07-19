@@ -4,8 +4,9 @@
   flex-wrap: nowrap;
   overflow-x: scroll;
 }
+
 @media only screen and (min-width: 800px) {
-  .icon-list  {
+  .icon-list {
     overflow-x: auto;
     justify-content: center;
     flex-wrap: wrap;

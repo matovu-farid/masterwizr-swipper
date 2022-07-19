@@ -1,9 +1,9 @@
 .App {
   text-align: center;
 }
+
 body {
   transition: 3s all ease;
-
 }
 
 .App-logo {
@@ -36,6 +36,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

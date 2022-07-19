@@ -3,11 +3,10 @@
   height: 400px;
   object-fit: cover;
   transition: 3s all ease;
-
 }
+
 @media only screen and (min-width: 800px) {
   .slider-img {
     height: 600px;
-
   }
 }
